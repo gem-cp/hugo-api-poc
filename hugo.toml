@@ -1,0 +1,95 @@
+# config.toml
+
+baseURL = "https://gem-cp.github.io/hugo-api-poc/"
+languageCode = "de-de"
+title = "API PoC and Integrated Docs"
+
+# This is the crucial part that was missing.
+# It tells Hugo to treat themes and other repos as modules.
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.110.0"
+  [[module.imports]]
+    # Import the Docsy theme from GitHub
+    path = "github.com/google/docsy"
+    disable = false
+  
+  # --- Multirepo Configuration ---
+
+  # Import von spec-VSDM2
+  [[module.imports]]
+    path = "github.com/gematik/spec-vsdm2"
+    [[module.imports.mounts]]
+      source = "docs"
+      target = "content/vsdm2"
+    [[module.imports.mounts]]
+      source = "images"
+      target = "static/vsdm2/images"
+    [[module.imports.mounts]]
+      source = "README.md"
+      target = "content/vsdm2/_index.md"
+
+  # Import von zeta
+  [[module.imports]]
+    path = "github.com/gematik/zeta"
+    [[module.imports.mounts]]
+      source = "docs"
+      target = "content/zeta"
+    [[module.imports.mounts]]
+      source = "images"
+      target = "static/zeta/images"
+    [[module.imports.mounts]]
+      source = "index.md"
+      target = "content/zeta/_index.md"
+
+# Markdown Konfiguration für Syntax-Highlighting etc.
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+# --- Hauptmenü für die obere Navigationsleiste ---
+[[menu.main]]
+  name = "Home"
+  weight = 10
+  url = "/"
+  
+[[menu.main]]
+  name = "VSDM2"
+  weight = 20
+  # Identifier ist wichtig, um später Unterpunkte zuordnen zu können
+  identifier = "vsdm2" 
+  url = "/vsdm2/"
+
+[[menu.main]]
+  name = "ZETA"
+  weight = 30
+  identifier = "zeta"
+  url = "/zeta/"
+
+# --- Cascade für Front Matter ---
+# Wendet Standard-Metadaten auf ganze Sektionen an.
+[[cascade]]
+  [cascade._target]
+    path = "/vsdm2/**"
+  [cascade.params]
+    # Dies sorgt dafür, dass die Seiten in der linken Navigation erscheinen.
+    # Die Sortierung erfolgt alphabetisch nach Dateinamen.
+    # Um die Reihenfolge manuell zu steuern, müsstest du die Dateien 
+    # wie in Schritt A) beschrieben lokal überschreiben und ein 'weight' hinzufügen.
+    show_in_sidebar = true
+
+[[cascade]]
+  [cascade._target]
+    path = "/zeta/**"
+  [cascade.params]
+    show_in_sidebar = true

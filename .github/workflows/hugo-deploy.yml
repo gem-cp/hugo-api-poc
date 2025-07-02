@@ -1,0 +1,64 @@
+# .github/workflows/hugo-deploy.yml
+
+name: Deploy Hugo site to Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Berechtigungen für das Deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Nur ein Job gleichzeitig ausführen
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Wichtig für Hugo Modules
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21' # oder eine neuere Version
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo site
+        run: |
+          # Lädt die Hugo Modules (Docsy, spec-VSDM2, zeta)
+          hugo mod tidy
+          # Baut die Seite. Hugo legt sie im "public" Ordner ab.
+          hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
