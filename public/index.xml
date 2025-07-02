@@ -8,6 +8,27 @@
     <language>de-de</language>
     <atom:link href="http://localhost:1313/hugo-api-poc/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Anwendungsfälle</title>
+      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ZETA API v1</title>
+      <link>http://localhost:1313/hugo-api-poc/zeta/api/v1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-api-poc/zeta/api/v1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ZETA Guard</title>
+      <link>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</guid>
+      <description></description>
+    </item>
+    <item>
       <title></title>
       <link>http://localhost:1313/hugo-api-poc/vsdm2/temp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -20,13 +41,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_ablauf_ps/</guid>
       <description>&lt;h1 id=&#34;abläufe-im-ps&#34;&gt;Abläufe im PS&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Aufnahme des Versicherten&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Im Primärsystem dient bei der Anmeldung die eGK und zukünftig die GesundheitsID des Versicherten zur Aufnahme bzw. Identifikation des Versicherten.&lt;/p&gt;&#xA;&lt;p&gt;Dies beinhaltet&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;die Herstellung des Versorgungskontextes&lt;/li&gt;&#xA;&lt;li&gt;den Abruf der VSD beim Fachdienst VSDM 2.0&lt;/li&gt;&#xA;&lt;li&gt;den Abruf der Prüfziffer für die Abrechnung&lt;/li&gt;&#xA;&lt;li&gt;bei unbekannten Versicherten das Anlegen des Patientenstammblatts&lt;/li&gt;&#xA;&lt;li&gt;bei bekannten Versicherten ggf. das Aktualisieren des Patientenstammblatts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Beim ersten Kontakt des Versicherten im laufenden Quartal muss das PS den Abruf der VSD beim Fachdienst VSDM durchführen. Bei Folgebesuchen des Versicherten im laufenden Quartal kann immer ein erneuter Abruf der VSD erfolgen, um Änderungen in den VSD in das PS übernehmen zu können. Dies kann insbesondere wichtig sein in Bezug auf Anpassungen zum Versicherungsschutz oder zur Kostenabdeckung.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</guid>
-      <description>&lt;h1 id=&#34;vsd-vom-fachdienst-abrufen&#34;&gt;VSD vom Fachdienst abrufen&lt;/h1&gt;&#xA;&lt;p&gt;Der Anwendungsfall ermöglicht dem Leistungserbringer,&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;das gültige Versicherungsverhältnis beim erstmaligen Quartalsbesuch zu prüfen,&lt;/li&gt;&#xA;&lt;li&gt;die jeweils zum Besuch aktuellen VSD und&lt;/li&gt;&#xA;&lt;li&gt;die Prüfziffer für die Abrechnung zu erhalten&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Vorraussetzungen für die Durchführung des VSDM-Anwendungsfalls ist die Herstellung des Versorgungskontextes. Versorgungskontext bedeutet, dass ein Zusammenhang zwischen einem berechtigten Versicherten und einer behandelnden oder versorgenden Leistungserbringerinstitution (LEI) hergestellt wird.&lt;/p&gt;&#xA;&lt;p&gt;Der Versorgungskontext wird durch die folgenden Schritte realisiert:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Authentisierung der LEI am PoPP-Service mittels einer SM-B Identität (Karte oder HSM)&lt;/li&gt;&#xA;&lt;li&gt;Authentisierung des Versicherten mittels eGK oder GesundheitsID&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Nach der erfolgreichen Authentisierung der LEI und des Versicherten wird das Vorhandensein des Versorgungskontextes in Form eines PoPP-Tokens, welcher an das PS übergeben wird, attestiert. Anschließend kann das Primärsystems den PoPP-Token als Autorisierung verwenden, um den Abruf der Versichertenstammdaten am Fachdienst VSDM 2.0 durchzuführen. Die Herstellung des Versorgungskontextes ist nur beim ersten Besuch des Versicherten im laufenden Quartal notwendig. Bei Folgebesuchen kann der im PS bereits vorhandene PoPP-Token für jeden weiteren Abruf der VSD im laufenden Quartal verwendet werden.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -92,25 +106,11 @@
       <description>&lt;p&gt;Im &lt;a href=&#34;https://github.com/gematik/zeta&#34;&gt;ZETA GitHub Repository&lt;/a&gt; werden Branches verwendet um den Status der Weiterentwicklung und das Review von Änderungen abzubilden.&lt;/p&gt;&#xA;&lt;p&gt;Folgende Branches werden verwendet:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;main&lt;/em&gt; (enthält den letzten freigegebenen Stand der Entwicklung; besteht permanent)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;develop&lt;/em&gt; (enthält den Stand der fertig entwickelten Features und wird zum Review durch Industriepartner und Gesellschafter verwendet; basiert auf main; nach Freigabe erfolgt ein merge in main und ein Release wird erzeugt; besteht permanent)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;feature/name&lt;/em&gt; (in feature branches werden neue Features entwickelt; basiert auf develop; nach Fertigstellung erfolgt ein merge in develop; wird nach dem merge gelöscht)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;hotfix/name&lt;/em&gt; (in hotfix branches werden Hotfixes entwickelt; basiert auf main; nach Fertigstellung erfolgt ein merge in develop und in main; wird nach dem merge gelöscht)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;concept/name&lt;/em&gt; (in concept branches werden neue Konzepte entwickelt; basiert auf develop; dient der Abstimmung mit Dritten; es erfolgt kein merge; wird nach Bedarf gelöscht)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;misc/name&lt;/em&gt; (nur für internen Gebrauch der gematik; es erfolgt kein merge; wird nach Bedarf gelöscht)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>ZETA API v1</title>
-      <link>http://localhost:1313/hugo-api-poc/zeta/api/v1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/zeta/api/v1/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;TOC&#xA;{:toc}&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;zeta-api-v1&#34;&gt;ZETA API v1&lt;/h2&gt;&#xA;&lt;p&gt;{::nomarkdown}&#xA;{% include badge.html name=&amp;ldquo;zeta_api&amp;rdquo; %}&#xA;{:/nomarkdown}&lt;/p&gt;&#xA;&lt;p&gt;Die ZETA API ermöglicht es ZETA Clients, auf geschützte Ressourcen zuzugreifen und dabei Sicherheits- und Authentifizierungsmechanismen zu nutzen.&#xA;Der ZETA Client nutzt Endpunkte des ZETA Guard für die Client-Registrierung, Authentifizierung und Autorisierung.&lt;/p&gt;&#xA;&lt;p&gt;Stationäre Clients verwenden bei der Authentifizierung Endpunkte des Konnektors/TI-Gateways und des ZETA Attestation Service.&lt;/p&gt;&#xA;&lt;p&gt;Mobile Clients verwenden Endpunkte der betriebssystem-spezifischen Attestierung. Die Authentifizierung erfolgt mit OpenID Connect (OIDC) und der ZETA Guard API.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>ZETA API Versionen</title>
       <link>http://localhost:1313/hugo-api-poc/zeta/api/zeta-api-versionen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/hugo-api-poc/zeta/api/zeta-api-versionen/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gematik.github.io/ZETA/docs/api/v1/&#34;&gt;ZETA API v1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>ZETA Guard</title>
-      <link>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;TOC&#xA;{:toc}&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;zeta-guard-v1&#34;&gt;ZETA Guard v1&lt;/h2&gt;&#xA;&lt;p&gt;{::nomarkdown}&#xA;{% include badge.html name=&amp;ldquo;zeta_guard&amp;rdquo; %}&#xA;{:/nomarkdown}&lt;/p&gt;&#xA;&lt;p&gt;ZETA Guard ist die zentrale Komponente von ZETA, die als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) fungiert. ZETA Guard ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen auf geschützte Resource Server.&#xA;ZETA Guard bietet eine RESTful API, die es ZETA Clients ermöglicht, sich zu registrieren, zu authentifizieren und Autorisierungsanfragen zu stellen. Die API ist so gestaltet, dass sie eine einfache Integration in bestehende Systeme ermöglicht und gleichzeitig die Sicherheitsanforderungen des Zero Trust Modells erfüllt.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,16 @@
+{
+  "name": "hugo-api-poc",
+  "version": "1.0.0",
+  "description": "Node.js dependencies for Hugo site build",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gem-cp/hugo-api-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0"
+  }
+}

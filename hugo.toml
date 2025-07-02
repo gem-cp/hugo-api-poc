@@ -86,10 +86,13 @@ title = "API PoC and Integrated Docs"
     # Die Sortierung erfolgt alphabetisch nach Dateinamen.
     # Um die Reihenfolge manuell zu steuern, müsstest du die Dateien 
     # wie in Schritt A) beschrieben lokal überschreiben und ein 'weight' hinzufügen.
-    show_in_sidebar = true
+    type = "docs"
+    #show_in_sidebar = true
 
 [[cascade]]
   [cascade._target]
     path = "/zeta/**"
   [cascade.params]
-    show_in_sidebar = true
+    type = "docs"
+    # Hier ebenfalls die Sortierung alphabetisch nach Dateinamen.
+    #show_in_sidebar = true

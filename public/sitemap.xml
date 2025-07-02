@@ -6,11 +6,15 @@
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/zeta/</loc>
   </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/zeta/api/v1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</loc>
+  </url><url>
     <loc>http://localhost:1313/hugo-api-poc/vsdm2/temp/</loc>
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_ablauf_ps/</loc>
-  </url><url>
-    <loc>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</loc>
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsszenarien/</loc>
   </url><url>
@@ -36,10 +40,6 @@
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-api-poc/zeta/api/v1/</loc>
-  </url><url>
     <loc>http://localhost:1313/hugo-api-poc/zeta/api/zeta-api-versionen/</loc>
-  </url><url>
-    <loc>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</loc>
   </url>
 </urlset>

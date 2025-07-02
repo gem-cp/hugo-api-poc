@@ -72,9 +72,65 @@ main (enthält den letzten freigegebenen Stand der Entwicklung; besteht permanen
 </div>
 </nav>
     </header>
-    <div class="container-fluid td-default td-outer">
-      <main role="main" class="td-main">
-        <p>Im <a href="https://github.com/gematik/zeta">ZETA GitHub Repository</a> werden Branches verwendet um den Status der Weiterentwicklung und das Review von Änderungen abzubilden.</p>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-hugo-api-poczeta-li">
+  <a href="/hugo-api-poc/zeta/" title="ZETA Dokumentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-hugo-api-poczeta"><span class="">Überblick ZETA</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-poczetaapiv1-li">
+  <a href="/hugo-api-poc/zeta/api/v1/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-poczetaapiv1"><span class="">ZETA API v1</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-poczetazeta-guard-li">
+  <a href="/hugo-api-poc/zeta/zeta-guard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-poczetazeta-guard"><span class="">ZETA Guard</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-hugo-api-poczetabranch-modell-li">
+  <a href="/hugo-api-poc/zeta/branch-modell/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-hugo-api-poczetabranch-modell"><span class="td-sidebar-nav-active-item">Branch Modell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-poczetaapizeta-api-versionen-li">
+  <a href="/hugo-api-poc/zeta/api/zeta-api-versionen/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-poczetaapizeta-api-versionen"><span class="">ZETA API Versionen</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/hugo-api-poc/zeta/">Überblick ZETA</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Branch Modell</li>
+  </ol>
+</nav>
+<div class="td-content">
+	<h1>Branch Modell</h1>
+	
+	<header class="article-meta">
+		
+</header>
+	<p>Im <a href="https://github.com/gematik/zeta">ZETA GitHub Repository</a> werden Branches verwendet um den Status der Weiterentwicklung und das Review von Änderungen abzubilden.</p>
 <p>Folgende Branches werden verwendet:</p>
 <ul>
 <li><em>main</em> (enthält den letzten freigegebenen Stand der Entwicklung; besteht permanent)</li>
@@ -85,7 +141,13 @@ main (enthält den letzten freigegebenen Stand der Entwicklung; besteht permanen
 <li><em>misc/name</em> (nur für internen Gebrauch der gematik; es erfolgt kein merge; wird nach Bedarf gelöscht)</li>
 </ul>
 
-      </main>
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
       <footer class="td-footer row d-print-none">
   <div class="container-fluid">
     <div class="row mx-md-2">
