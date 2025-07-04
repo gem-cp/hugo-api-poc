@@ -1,21 +1,21 @@
-# config.toml
+# hugo.toml
 
 baseURL = "https://gem-cp.github.io/hugo-api-poc/"
 languageCode = "de-de"
 title = "API PoC and Integrated Docs"
 
-# This is the crucial part that was missing.
-# It tells Hugo to treat themes and other repos as modules.
+# Hugo Module Konfiguration
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.110.0"
   [[module.imports]]
-    # Import the Docsy theme from GitHub
+    # Import des Docsy Themes
     path = "github.com/google/docsy"
     disable = false
   
   # --- Multirepo Configuration ---
+  # Die Mounts sind bereits korrekt, da sie die Inhalte in 'content/docs/...' platzieren.
 
   # Import von spec-VSDM2
   [[module.imports]]
@@ -43,7 +43,7 @@ title = "API PoC and Integrated Docs"
       source = "index.md"
       target = "content/docs/zeta/_index.md"
 
-# Markdown Konfiguration für Syntax-Highlighting etc.
+# Markdown Konfiguration
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
@@ -58,38 +58,43 @@ title = "API PoC and Integrated Docs"
     tabWidth = 4
 
 # --- Hauptmenü für die obere Navigationsleiste ---
+# KORRIGIERT: Wir erstellen einen Hauptpunkt "Dokumentation" und hängen die Sektionen darunter.
+
 [[menu.main]]
   name = "Home"
   weight = 10
   url = "/"
+
+# Haupt-Dropdown für die Dokumentation
+[[menu.main]]
+  name = "Dokumentation"
+  weight = 20
+  identifier = "doc-main" # Wichtiger Identifier für die Unterpunkte
+  url = "/docs/"
   
+# Unterpunkt für VSDM2
 [[menu.main]]
   name = "VSDM2"
-  weight = 20
-  # Identifier ist wichtig, um später Unterpunkte zuordnen zu können
+  weight = 10
+  parent = "doc-main" # Ordnet diesen Punkt dem "Dokumentation"-Dropdown zu
   identifier = "vsdm2" 
-  url = "/vsdm2/"
+  url = "/docs/vsdm2/" # Der Pfad muss 'docs' enthalten
 
+# Unterpunkt für ZETA
 [[menu.main]]
   name = "ZETA"
-  weight = 30
+  weight = 20
+  parent = "doc-main" # Ordnet diesen Punkt dem "Dokumentation"-Dropdown zu
   identifier = "zeta"
-  url = "/zeta/"
+  url = "/docs/zeta/" # Der Pfad muss 'docs' enthalten
+
 
 # --- Cascade für Front Matter ---
-# Wendet Standard-Metadaten auf ganze Sektionen an.
-[[cascade]]
+# Ein einziger Cascade-Block für das gesamte /docs Verzeichnis
+# ist sauberer und funktioniert korrekt.
+[cascade]
+  # Dieser Block sorgt dafür, dass alle Seiten unter content/docs/ das richtige Layout bekommen.
   [cascade._target]
-    path = "/vsdm2/**"
+    path = "/docs/**" # Der Pfad muss auf das tatsächliche Content-Verzeichnis zielen.
   [cascade.params]
-    # Dies sorgt dafür, dass die Seiten in der linken Navigation erscheinen.
-    # Die Sortierung erfolgt alphabetisch nach Dateinamen.
-    # Um die Reihenfolge manuell zu steuern, müsstest du die Dateien 
-    # wie in Schritt A) beschrieben lokal überschreiben und ein 'weight' hinzufügen.
-  type = "docs"
-
-[[cascade]]
-  [cascade._target]
-    path = "/zeta/**"
-  [cascade.params]
-  type = "docs"
+    type = "docs"
