@@ -1,7 +1,5 @@
 ---
 title: "ZETA Dokumentation"
-linkTitle: "Überblick ZETA"
-weight: 1
+linkTitle: "ZETA"
+weight: 20
 ---
-
-Dies ist die Übersicht der importierten ZETA-Dokumentation. Die Inhalte stammen aus dem [zeta Repository](https://github.com/gematik/zeta).

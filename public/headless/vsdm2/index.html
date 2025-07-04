@@ -17,22 +17,22 @@
 <link rel="icon" type="image/png" href="/hugo-api-poc/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/hugo-api-poc/favicons/android-192x192.png" sizes="192x192">
 
-<title>ZETA API Versionen | API PoC and Integrated Docs</title>
-<meta name="description" content="ZETA API v1">
-<meta property="og:url" content="http://localhost:1313/hugo-api-poc/docs/zeta/api/zeta-api-versionen/">
+<title>API PoC and Integrated Docs</title>
+<meta name="description" content="Spezifikation VSDM 2.0 FHIR-Profile und API Disclaimer Dieses Dokument beschreibt die für die Implementierung des Versicherungsstammdatenmanagements (VSDM) 2.0 erforderlichen Vorgaben. Weitere Vorgaben zur Implementierung der Anteile von PoPP und Zero Trust sind zum Stand der Veröffentlichung von VSDM 2.0 nicht Bestandteil dieses Dokuments. Die Aufnahme der Implementierungsvorgaben aus PoPP und Zero Trust in den ILF für VSDM 2.0 erfolgt iterativ sobald die notwendigen Informationen aus diesen Implementierungsleitfäden vorliegen.">
+<meta property="og:url" content="http://localhost:1313/hugo-api-poc/headless/vsdm2/">
   <meta property="og:site_name" content="API PoC and Integrated Docs">
-  <meta property="og:title" content="ZETA API Versionen">
-  <meta property="og:description" content="ZETA API v1">
+  <meta property="og:title" content="API PoC and Integrated Docs">
+  <meta property="og:description" content="Spezifikation VSDM 2.0 FHIR-Profile und API Disclaimer Dieses Dokument beschreibt die für die Implementierung des Versicherungsstammdatenmanagements (VSDM) 2.0 erforderlichen Vorgaben. Weitere Vorgaben zur Implementierung der Anteile von PoPP und Zero Trust sind zum Stand der Veröffentlichung von VSDM 2.0 nicht Bestandteil dieses Dokuments. Die Aufnahme der Implementierungsvorgaben aus PoPP und Zero Trust in den ILF für VSDM 2.0 erfolgt iterativ sobald die notwendigen Informationen aus diesen Implementierungsleitfäden vorliegen.">
   <meta property="og:locale" content="de_de">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
+    <meta property="article:section" content="headless">
 
-  <meta itemprop="name" content="ZETA API Versionen">
-  <meta itemprop="description" content="ZETA API v1">
-  <meta itemprop="wordCount" content="3">
+  <meta itemprop="name" content="API PoC and Integrated Docs">
+  <meta itemprop="description" content="Spezifikation VSDM 2.0 FHIR-Profile und API Disclaimer Dieses Dokument beschreibt die für die Implementierung des Versicherungsstammdatenmanagements (VSDM) 2.0 erforderlichen Vorgaben. Weitere Vorgaben zur Implementierung der Anteile von PoPP und Zero Trust sind zum Stand der Veröffentlichung von VSDM 2.0 nicht Bestandteil dieses Dokuments. Die Aufnahme der Implementierungsvorgaben aus PoPP und Zero Trust in den ILF für VSDM 2.0 erfolgt iterativ sobald die notwendigen Informationen aus diesen Implementierungsleitfäden vorliegen.">
+  <meta itemprop="wordCount" content="874">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ZETA API Versionen">
-  <meta name="twitter:description" content="ZETA API v1">
+  <meta name="twitter:title" content="API PoC and Integrated Docs">
+  <meta name="twitter:description" content="Spezifikation VSDM 2.0 FHIR-Profile und API Disclaimer Dieses Dokument beschreibt die für die Implementierung des Versicherungsstammdatenmanagements (VSDM) 2.0 erforderlichen Vorgaben. Weitere Vorgaben zur Implementierung der Anteile von PoPP und Zero Trust sind zum Stand der Veröffentlichung von VSDM 2.0 nicht Bestandteil dieses Dokuments. Die Aufnahme der Implementierungsvorgaben aus PoPP und Zero Trust in den ILF für VSDM 2.0 erfolgt iterativ sobald die notwendigen Informationen aus diesen Implementierungsleitfäden vorliegen.">
 <link href="/hugo-api-poc/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -61,111 +61,88 @@
 </div>
 </nav>
     </header>
-    <div class="container-fluid td-outer">
-      <div class="td-main">
-        <div class="row flex-xl-nowrap">
-          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
-            <div id="td-sidebar-menu" class="td-sidebar__inner">
-  <form class="td-sidebar__search d-flex align-items-center">
-    
-    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
-    </button>
-  </form>
-  <nav class="td-sidebar-nav collapse" id="td-section-nav">
-    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-hugo-api-pocdocs-li">
-  <a href="/hugo-api-poc/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-hugo-api-pocdocs"><span class="">Dokumentation</span></a>
-  <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsoverview-li">
-  <a href="/hugo-api-poc/docs/overview/" title="Repository-übergreifende API Dokumentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsoverview"><span class="">Übersicht</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-hugo-api-pocdocsvsdm2-li">
-  <a href="/hugo-api-poc/docs/vsdm2/" title="VSDM2 Spezifikation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-hugo-api-pocdocsvsdm2"><span class="">VSDM2</span></a>
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_anwendungsfaelle-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_anwendungsfaelle/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_anwendungsfaelle"><span class="">Anwendungsfälle</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2temp-li">
-  <a href="/hugo-api-poc/docs/vsdm2/temp/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2temp"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_ablauf_ps-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_ablauf_ps/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_ablauf_ps"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_anwendungsszenarien-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_anwendungsszenarien/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_anwendungsszenarien"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_errorcodes-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_errorcodes/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_errorcodes"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_fhir_infos-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_fhir_infos/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_fhir_infos"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_informationsmodell-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_informationsmodell/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_informationsmodell"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_kontext_popp_zt-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_kontext_popp_zt/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_kontext_popp_zt"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_pruefziffer-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_pruefziffer/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_pruefziffer"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_psinteraktionen-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_psinteraktionen/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_psinteraktionen"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_statuscodes-li">
-  <a href="/hugo-api-poc/docs/vsdm2/vsdm_statuscodes/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_statuscodes"><span class=""></span></a>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-hugo-api-pocdocszeta-li">
-  <a href="/hugo-api-poc/docs/zeta/" title="ZETA Dokumentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-hugo-api-pocdocszeta"><span class="">ZETA</span></a>
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetabranch-modell-li">
-  <a href="/hugo-api-poc/docs/zeta/branch-modell/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetabranch-modell"><span class="">Branch Modell</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetaapiv1-li">
-  <a href="/hugo-api-poc/docs/zeta/api/v1/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetaapiv1"><span class="">ZETA API v1</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-hugo-api-pocdocszetaapizeta-api-versionen-li">
-  <a href="/hugo-api-poc/docs/zeta/api/zeta-api-versionen/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetaapizeta-api-versionen"><span class="td-sidebar-nav-active-item">ZETA API Versionen</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetazeta-guard-li">
-  <a href="/hugo-api-poc/docs/zeta/zeta-guard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetazeta-guard"><span class="">ZETA Guard</span></a>
-</li>
-  </ul>
-</li>
-  </ul>
-</li>
-    </ul>
-  </nav>
-</div>
-
-          </aside>
-          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
-            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
-
-</div>
-
-            
-            
-
-          </aside>
-          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
-            
-  
-
-            <nav aria-label="breadcrumb" class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
-    <a href="/hugo-api-poc/docs/">Dokumentation</a></li>
-  <li class="breadcrumb-item">
-    <a href="/hugo-api-poc/docs/zeta/">ZETA</a></li>
-  <li class="breadcrumb-item active" aria-current="page">
-    ZETA API Versionen</li>
-  </ol>
-</nav>
-<div class="td-content">
-	<h1>ZETA API Versionen</h1>
-	
-	<header class="article-meta">
-		
-</header>
-	<ul>
-<li><a href="https://gematik.github.io/ZETA/docs/api/v1/">ZETA API v1</a></li>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        <p><img align="right" width="200" height="37" src="./images/Gematik_Logo_Flag.png"/> <br/></p>
+<h1 id="spezifikation-vsdm-20-fhir-profile-und-api">Spezifikation VSDM 2.0 FHIR-Profile und API</h1>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Dieses Dokument beschreibt die für die Implementierung des Versicherungsstammdatenmanagements (VSDM) 2.0 erforderlichen Vorgaben. Weitere Vorgaben zur Implementierung der Anteile von PoPP und Zero Trust sind zum Stand der Veröffentlichung von VSDM 2.0 nicht Bestandteil dieses Dokuments. Die Aufnahme der Implementierungsvorgaben aus PoPP und Zero Trust in den ILF für VSDM 2.0 erfolgt iterativ sobald die notwendigen Informationen aus diesen Implementierungsleitfäden vorliegen.</p>
+<p>Die in der Spezifikation VSDM 2.0 [gemSpec_VSDM_2] enthaltenen und in den Steckbrief [gemSST_CS_VSDM_2] ausgeleiteten Anforderungen an Clientsysteme haben informativen Charakter und treffen Festlegungen über diesen Implementierungsleitfaden hinaus. Die Anforderungen dienen zur Unterstützung der Implementierung durch Primärsystemhersteller.</p>
+<h2 id="einleitung">Einleitung</h2>
+<p>Die gematik geht neue Wege und möchte auf diesem Weg die Nutzung der Schnittstellen rund um das VSDM 2.0 vorstellen. Die Beschreibung dieser API ergänzt die normativen Dokumente der gematik sowie die Festlegungen über die VSDM-Profile (inkl. Beispielen) des genutzten FHIR-Standards.</p>
+<p>Auf den folgenden Seiten stellt die gematik die Nutzung der Schnittstellen durch die Primärsysteme der Leistungserbringer vor.</p>
+<h2 id="was-ist-vsdm-20">Was ist VSDM 2.0</h2>
+<p>VSDM steht für „Versichertenstammdatenmanagement“. Es ist ein Teil der Telematikinfrastruktur (TI) im deutschen Gesundheitswesen und dient der Verwaltung und dem Abgleich der Stammdaten von gesetzlich versicherten Personen.
+VSDM 2.0 ist die Weiterentwicklung des bestehenden VSDM 1.0. Die Versichertenstammdaten (VSD) werden mit VSDM 2.0 nicht mehr auf der eGK des Versicherten gespeichert und aktualisiert sondern direkt vom Primärsystem (PS) des Leistungserbringers (LE) vom Fachdienst der Krankenkasse abgerufen und ggf. im PS aktualisiert.
+Während bei VSDM 1.0 in den Anwendungsfällen die Komponenten Konnektor, eHealth Kartenterminals, eGK, SMC-B, Intermediär und schließlich die VSDM-Backend-Dienste des Versicherers zum Einsatz kommen, reduziert VSDM 2.0 die Abhängigkeiten von diesen Komponenten.
+Mit der Initiative TI 2.0 wird die gesamte Infrastruktur modernisiert und auf den neuesten Stand der Sicherheits- und Architekturprinzipien gebracht.</p>
+<p>In der TI 2.0 wird der Nachweis des Versorgungskontextes mittels PoPP („Proof-of-Patient-Presence“) von fachlichen Anwendungsfällen entkoppelt. Bei VSDM 2.0  ist dies die Bereitstellung demografischer Daten. Die Versicherer stellen also eine einfache FHIR-REST-API bereit, mit der die Client-Software der Arztpraxis „nur“ zusätzliche Daten anfordert, indem sie ein legitimes PoPP-Token bereitstellt.</p>
+<p>Im nachfolgend verlinkten Kapitel finden Sie eine Übersicht, in welchem Kontext VSDM, PoPP und Zero Trust zueinander stehen:</p>
+<p><a href="docs/vsdm_kontext_popp_zt.md">Kontext VSDM/PoPP/ZeroTrust</a></p>
+<p><strong>Funktionen des VSDM:</strong></p>
+<ul>
+<li><strong>Stammdatenabgleich:</strong> Über das VSDM 2.0 werden die Versichertenstammdaten, wie Name, Geburtsdatum, Anschrift, und Versicherungsschutz, bei jedem Arztbesuch online abgerufen und ggf.  aktualisiert.</li>
+<li><strong>Sicherstellung der Aktualität:</strong> Es soll sichergestellt werden, dass die im Primärsystem gespeicherten Daten stets aktuell sind.</li>
+<li><strong>Datensicherheit:</strong> Die Daten werden verschlüsselt und sicher über die Telematikinfrastruktur übertragen.</li>
 </ul>
+<h2 id="anwendungsszenarien">Anwendungsszenarien</h2>
+<p>In diesem Kapitel finden Sie eine Beschreibung der Anwendungsszenarien VSDM 2.0 für die relevanten Sektoren des Gesundheitswesens.</p>
+<p><a href="docs/vsdm_anwendungsszenarien.md">Anwendungsszenarien</a></p>
+<h2 id="anwendungsfälle-in-vsdm-20">Anwendungsfälle in VSDM 2.0</h2>
+<p>Im nachfolgend verlinkten Kapitel finden Sie die Übersicht der Anwendungsfälle im Kontext VSDM 2.0.</p>
+<p><a href="docs/vsdm_anwendungsfaelle.md">Anwendungsfälle</a></p>
+<h2 id="abläufe-im-primärsystem">Abläufe im Primärsystem</h2>
+<p>Im Rahmen der Anwendungsfälle finden im Primärsystem weitere Abläufe im Zusammenhang mit der Versorgung des Versicherten statt. Hier finden Sie Informationen zu den Abläufen im Primärsystem und Interaktionen des Primärsystems mit dem Nutzer.</p>
+<p><a href="docs/vsdm_ablauf_ps.md">Abläufe</a></p>
+<p><a href="docs/vsdm_psinteraktionen.md">Primärsystem-Interaktionen</a></p>
+<h2 id="informationsmodell-vsd">Informationsmodell VSD</h2>
+<p>Hier geht es zur Informationsseite zum neuen Informationsmodell für VSDM 2.0.</p>
+<p><strong>Anmerkung: Die Festlegung der finalen Inhalte des Informationsmodells erfolgt im Rahmen der Fortschreibung dieser Spezifikation. Die in diesem Dokument dargestellten Informationen stellen somit lediglich den bis zum Zeitpunkt der Veröffentlichung abgestimmten Stand dar.</strong></p>
+<p><a href="docs/vsdm_informationsmodell.md">Informationsmodell</a></p>
+<h2 id="prüfziffer">Prüfziffer</h2>
+<p>Bei jedem erfolgreich durchgeführten Abruf der VSD wird von Fachdienst VSDM 2.0 auch immer die Prüfziffer übermittelt. Diese wird im Primärsystem gespeichert und kann den Abrechnungsunterlagen beigefügt werden.</p>
+<p>Hier finden Sie weitere Informationen zur Prüfziffer für VSDM 2.0.</p>
+<p><a href="docs/vsdm_pruefziffer.md">Prüfziffer</a></p>
+<h2 id="fehlerbehandlung">Fehlerbehandlung</h2>
+<p>Hier geht es zur Informationsseite zum Umgang mit Fehlermeldungen</p>
+<p><a href="docs/vsdm_errorcodes.md">Fehlermeldungen</a></p>
+<p>Hier geht es zur Informationsseite zu Statuscodes</p>
+<p><a href="docs/vsdm_statuscodes.md">Statuscodes</a></p>
+<h2 id="fhir-profile-vsdm-20">FHIR Profile VSDM 2.0</h2>
+<p>In VSDM 1.0 wurde ein proprietäres XML-Datenformat in einer SOAP-Servicekette verwendet. Mit VSDM 2.0 wird der VSD Datensatz in den FHIR-Standard migriert, der im deutschen Gesundheitswesen immer mehr zum Einsatz kommt. Die FHIR-Profile und Beispielressourcen werden im offiziellen <a href="https://simplifier.net/vsdm2">VSDM 2 simplifier project</a> veröffentlicht.</p>
+<h2 id="mitgeltende-dokumente-und-informationen">Mitgeltende Dokumente und Informationen</h2>
+<p>Hier finden Sie eine Übersicht zu den weiterführenden Dokumenten zur Implementierung.</p>
+<ul>
+<li><a href="https://gemspec.gematik.de/prereleases/Draft_ZeroTrust_VSDM2_24_1/gemSpec_VSDM_2_V1.0.0_CC/">Spezifikation VSDM 2.0</a></li>
+<li><a href="https://simplifier.net/vsdm2">FHIR-Profile VSDM 2.0</a></li>
+<li><a href="https://gemspec.gematik.de/docs/gemSST/gemSST_CS_VSDM_2">Steckbrief Clientsystem-Schnittstelle zum VSDM 2.0</a></li>
+</ul>
+<h2 id="branch-modell">Branch Modell</h2>
+<p>In diesem Repository werden Branches verwendet um den Status der Weiterentwicklung und das Review von Änderungen abzubilden.
+Folgende Branches werden verwendet</p>
+<ul>
+<li>
+<p>main (enthält den letzten freigegebenen Stand der Entwicklung; besteht permanent)</p>
+</li>
+<li>
+<p>develop (enthält den Stand der fertig entwickelten Features und wird zum Review durch Industriepartner und Gesellschafter verwendet; basiert auf main; nach Freigabe erfolgt ein merge in main und ein Release wird erzeugt; besteht permanent)</p>
+</li>
+<li>
+<p>feature/ilf (in feature branches werden neue Features entwickelt (ggf. basierend auf develop); nach Fertigstellung erfolgt ein merge in develop; der feature branch wird nach dem merge gelöscht)</p>
+</li>
+</ul>
+<h2 id="lizenzbedingungen">Lizenzbedingungen</h2>
+<p>Copyright (c) 2022 gematik GmbH</p>
+<p>Licensed under the Apache License, Version 2.0 (the &ldquo;License&rdquo;); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &ldquo;AS IS&rdquo; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<h2 id="api-dokumentation-vsdm-20">API Dokumentation VSDM 2.0</h2>
+<p>Wie oben erwähnt, wird das VSDM 2.0 auf die Verwendung einer RESTful FHIR-API reduziert, die hier dokumentiert ist:</p>
+<p><a href="./src/openapi/vsdm2.yaml">vsdm2.yaml</a>.</p>
+<h1 id="kontakt">Kontakt</h1>
+<p>Gehen Sie zu <a href="https://www.gematik.de">https://www.gematik.de</a> oder <a href="mailto:OSPO@gematik.de">OSPO@gematik.de</a></p>
 
-	
-</div>
-
-
-          </main>
-        </div>
-      </div>
+      </main>
       <footer class="td-footer row d-print-none">
   <div class="container-fluid">
     <div class="row mx-md-2">

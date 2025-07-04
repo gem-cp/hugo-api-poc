@@ -2,12 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/overview/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_anwendungsfaelle/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/api/v1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/zeta-guard/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/temp/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_ablauf_ps/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_anwendungsszenarien/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_errorcodes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_fhir_infos/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_informationsmodell/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_kontext_popp_zt/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_pruefziffer/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_psinteraktionen/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_statuscodes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/branch-modell/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/categories/</loc>
+  </url><url>
     <loc>http://localhost:1313/hugo-api-poc/docs/</loc>
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-api-poc/categories/</loc>
-  </url><url>
     <loc>http://localhost:1313/hugo-api-poc/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/api/zeta-api-versionen/</loc>
   </url>
 </urlset>

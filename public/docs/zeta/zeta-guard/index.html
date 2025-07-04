@@ -18,17 +18,25 @@
 <link rel="icon" type="image/png" href="/hugo-api-poc/favicons/android-192x192.png" sizes="192x192">
 
 <title>ZETA Guard | API PoC and Integrated Docs</title>
-<meta name="description" content="">
+<meta name="description" content="TOC {:toc} ZETA Guard v1 {::nomarkdown} {% include badge.html name=“zeta_guard” %} {:/nomarkdown}
+ZETA Guard ist die zentrale Komponente von ZETA, die als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) fungiert. ZETA Guard ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen auf geschützte Resource Server. ZETA Guard bietet eine RESTful API, die es ZETA Clients ermöglicht, sich zu registrieren, zu authentifizieren und Autorisierungsanfragen zu stellen. Die API ist so gestaltet, dass sie eine einfache Integration in bestehende Systeme ermöglicht und gleichzeitig die Sicherheitsanforderungen des Zero Trust Modells erfüllt.">
 <meta property="og:url" content="http://localhost:1313/hugo-api-poc/docs/zeta/zeta-guard/">
   <meta property="og:site_name" content="API PoC and Integrated Docs">
   <meta property="og:title" content="ZETA Guard">
+  <meta property="og:description" content="TOC {:toc} ZETA Guard v1 {::nomarkdown} {% include badge.html name=“zeta_guard” %} {:/nomarkdown}
+ZETA Guard ist die zentrale Komponente von ZETA, die als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) fungiert. ZETA Guard ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen auf geschützte Resource Server. ZETA Guard bietet eine RESTful API, die es ZETA Clients ermöglicht, sich zu registrieren, zu authentifizieren und Autorisierungsanfragen zu stellen. Die API ist so gestaltet, dass sie eine einfache Integration in bestehende Systeme ermöglicht und gleichzeitig die Sicherheitsanforderungen des Zero Trust Modells erfüllt.">
   <meta property="og:locale" content="de_de">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 
   <meta itemprop="name" content="ZETA Guard">
+  <meta itemprop="description" content="TOC {:toc} ZETA Guard v1 {::nomarkdown} {% include badge.html name=“zeta_guard” %} {:/nomarkdown}
+ZETA Guard ist die zentrale Komponente von ZETA, die als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) fungiert. ZETA Guard ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen auf geschützte Resource Server. ZETA Guard bietet eine RESTful API, die es ZETA Clients ermöglicht, sich zu registrieren, zu authentifizieren und Autorisierungsanfragen zu stellen. Die API ist so gestaltet, dass sie eine einfache Integration in bestehende Systeme ermöglicht und gleichzeitig die Sicherheitsanforderungen des Zero Trust Modells erfüllt.">
+  <meta itemprop="wordCount" content="93">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="ZETA Guard">
+  <meta name="twitter:description" content="TOC {:toc} ZETA Guard v1 {::nomarkdown} {% include badge.html name=“zeta_guard” %} {:/nomarkdown}
+ZETA Guard ist die zentrale Komponente von ZETA, die als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) fungiert. ZETA Guard ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen auf geschützte Resource Server. ZETA Guard bietet eine RESTful API, die es ZETA Clients ermöglicht, sich zu registrieren, zu authentifizieren und Autorisierungsanfragen zu stellen. Die API ist so gestaltet, dass sie eine einfache Integration in bestehende Systeme ermöglicht und gleichzeitig die Sicherheitsanforderungen des Zero Trust Modells erfüllt.">
 <link href="/hugo-api-poc/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -47,10 +55,7 @@
         <a class="nav-link" href="/hugo-api-poc/"><span>Home</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/hugo-api-poc/vsdm2/"><span>VSDM2</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/hugo-api-poc/zeta/"><span>ZETA</span></a>
+        <a class="nav-link" href="/hugo-api-poc/docs/"><span>Dokumentation</span></a>
       </li>
       </ul>
   </div>
@@ -73,10 +78,12 @@
   <nav class="td-sidebar-nav collapse" id="td-section-nav">
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-hugo-api-pocdocs-li">
-  <a href="/hugo-api-poc/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-hugo-api-pocdocs"><span class="">Docs</span></a>
+  <a href="/hugo-api-poc/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-hugo-api-pocdocs"><span class="">Dokumentation</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-hugo-api-pocdocsvsdm2-li">
-  <a href="/hugo-api-poc/docs/vsdm2/" title="VSDM2 Dokumentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-hugo-api-pocdocsvsdm2"><span class="">Überblick VSDM2</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsoverview-li">
+  <a href="/hugo-api-poc/docs/overview/" title="Repository-übergreifende API Dokumentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsoverview"><span class="">Übersicht</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-hugo-api-pocdocsvsdm2-li">
+  <a href="/hugo-api-poc/docs/vsdm2/" title="VSDM2 Spezifikation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-hugo-api-pocdocsvsdm2"><span class="">VSDM2</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocsvsdm2vsdm_anwendungsfaelle-li">
   <a href="/hugo-api-poc/docs/vsdm2/vsdm_anwendungsfaelle/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocsvsdm2vsdm_anwendungsfaelle"><span class="">Anwendungsfälle</span></a>
@@ -103,16 +110,16 @@
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-hugo-api-pocdocszeta-li">
-  <a href="/hugo-api-poc/docs/zeta/" title="ZETA Dokumentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-hugo-api-pocdocszeta"><span class="">Überblick ZETA</span></a>
+  <a href="/hugo-api-poc/docs/zeta/" title="ZETA Dokumentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-hugo-api-pocdocszeta"><span class="">ZETA</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetaapiv1-li">
-  <a href="/hugo-api-poc/docs/zeta/api/v1/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetaapiv1"><span class="">ZETA API v1</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-hugo-api-pocdocszetazeta-guard-li">
-  <a href="/hugo-api-poc/docs/zeta/zeta-guard/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetazeta-guard"><span class="td-sidebar-nav-active-item">ZETA Guard</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetabranch-modell-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetabranch-modell-li">
   <a href="/hugo-api-poc/docs/zeta/branch-modell/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetabranch-modell"><span class="">Branch Modell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetaapiv1-li">
+  <a href="/hugo-api-poc/docs/zeta/api/v1/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetaapiv1"><span class="">ZETA API v1</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugo-api-pocdocszetaapizeta-api-versionen-li">
   <a href="/hugo-api-poc/docs/zeta/api/zeta-api-versionen/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetaapizeta-api-versionen"><span class="">ZETA API Versionen</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-hugo-api-pocdocszetazeta-guard-li">
+  <a href="/hugo-api-poc/docs/zeta/zeta-guard/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-hugo-api-pocdocszetazeta-guard"><span class="td-sidebar-nav-active-item">ZETA Guard</span></a>
 </li>
   </ul>
 </li>
@@ -128,7 +135,14 @@
 
 </div>
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#zeta-guard-v1">ZETA Guard v1</a></li>
+  </ul>
+</nav>
+      </div>
+    
             
 
           </aside>
@@ -139,9 +153,9 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/hugo-api-poc/docs/">Docs</a></li>
+    <a href="/hugo-api-poc/docs/">Dokumentation</a></li>
   <li class="breadcrumb-item">
-    <a href="/hugo-api-poc/docs/zeta/">Überblick ZETA</a></li>
+    <a href="/hugo-api-poc/docs/zeta/">ZETA</a></li>
   <li class="breadcrumb-item active" aria-current="page">
     ZETA Guard</li>
   </ol>
@@ -152,7 +166,18 @@
 	<header class="article-meta">
 		
 </header>
-	
+	<ul>
+<li>TOC
+{:toc}</li>
+</ul>
+<h2 id="zeta-guard-v1">ZETA Guard v1</h2>
+<p>{::nomarkdown}
+{% include badge.html name=&ldquo;zeta_guard&rdquo; %}
+{:/nomarkdown}</p>
+<p>ZETA Guard ist die zentrale Komponente von ZETA, die als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) fungiert. ZETA Guard ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen auf geschützte Resource Server.
+ZETA Guard bietet eine RESTful API, die es ZETA Clients ermöglicht, sich zu registrieren, zu authentifizieren und Autorisierungsanfragen zu stellen. Die API ist so gestaltet, dass sie eine einfache Integration in bestehende Systeme ermöglicht und gleichzeitig die Sicherheitsanforderungen des Zero Trust Modells erfüllt.</p>
+<hr>
+
 	
 </div>
 

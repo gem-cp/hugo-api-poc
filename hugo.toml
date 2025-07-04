@@ -4,18 +4,18 @@ baseURL = "https://gem-cp.github.io/hugo-api-poc/"
 languageCode = "de-de"
 title = "API PoC and Integrated Docs"
 
-# Hugo Module Konfiguration
+# Docsy Theme und Hugo Version
+# Das theme-Schlüsselwort ist optional, wenn du das Theme als Modul lädst.
+# theme = "github.com/google/docsy"
+
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.110.0"
   [[module.imports]]
-    # Import des Docsy Themes
     path = "github.com/google/docsy"
-    disable = false
   
   # --- Multirepo Configuration ---
-  # Die Mounts sind bereits korrekt, da sie die Inhalte in 'content/docs/...' platzieren.
 
   # Import von spec-VSDM2
   [[module.imports]]
@@ -26,9 +26,10 @@ title = "API PoC and Integrated Docs"
     [[module.imports.mounts]]
       source = "images"
       target = "static/docs/vsdm2/images"
+    # WIR STELLEN DEN URSPRÜNGLICHEN MOUNT WIEDER HER
     [[module.imports.mounts]]
       source = "README.md"
-      target = "content/docs/vsdm2/_index.md"
+      target = "content/docs/vsdm2/_index.md" 
 
   # Import von zeta
   [[module.imports]]
@@ -39,6 +40,7 @@ title = "API PoC and Integrated Docs"
     [[module.imports.mounts]]
       source = "images"
       target = "static/docs/zeta/images"
+    # WIR STELLEN DEN URSPRÜNGLICHEN MOUNT WIEDER HER
     [[module.imports.mounts]]
       source = "index.md"
       target = "content/docs/zeta/_index.md"
@@ -49,52 +51,28 @@ title = "API PoC and Integrated Docs"
     unsafe = true
   [markup.highlight]
     codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    noClasses = true
     style = "monokai"
-    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 2
 
 # --- Hauptmenü für die obere Navigationsleiste ---
-# KORRIGIERT: Wir erstellen einen Hauptpunkt "Dokumentation" und hängen die Sektionen darunter.
-
 [[menu.main]]
   name = "Home"
   weight = 10
   url = "/"
-
-# Haupt-Dropdown für die Dokumentation
+  
 [[menu.main]]
   name = "Dokumentation"
   weight = 20
-  identifier = "doc-main" # Wichtiger Identifier für die Unterpunkte
+  identifier = "docs"
   url = "/docs/"
-  
-# Unterpunkt für VSDM2
-[[menu.main]]
-  name = "VSDM2"
-  weight = 10
-  parent = "doc-main" # Ordnet diesen Punkt dem "Dokumentation"-Dropdown zu
-  identifier = "vsdm2" 
-  url = "/docs/vsdm2/" # Der Pfad muss 'docs' enthalten
 
-# Unterpunkt für ZETA
-[[menu.main]]
-  name = "ZETA"
-  weight = 20
-  parent = "doc-main" # Ordnet diesen Punkt dem "Dokumentation"-Dropdown zu
-  identifier = "zeta"
-  url = "/docs/zeta/" # Der Pfad muss 'docs' enthalten
-
-
-# --- Cascade für Front Matter ---
-# Ein einziger Cascade-Block für das gesamte /docs Verzeichnis
-# ist sauberer und funktioniert korrekt.
-[cascade]
-  # Dieser Block sorgt dafür, dass alle Seiten unter content/docs/ das richtige Layout bekommen.
+# Ein einziger Block, der alles regelt.
+[[cascade]]
   [cascade._target]
-    path = "/docs/**" # Der Pfad muss auf das tatsächliche Content-Verzeichnis zielen.
-  [cascade.params]
+    # Gilt für alle Inhalte unter /docs
+    path = "/docs/**"
+  [cascade.page]
+    # Weist allen Seiten das korrekte Docsy-Layout zu
     type = "docs"

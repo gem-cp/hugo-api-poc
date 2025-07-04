@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Headlesses on API PoC and Integrated Docs</title>
+    <link>http://localhost:1313/hugo-api-poc/headless/</link>
+    <description>Recent content in Headlesses on API PoC and Integrated Docs</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <atom:link href="http://localhost:1313/hugo-api-poc/headless/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/hugo-api-poc/headless/vsdm2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-api-poc/headless/vsdm2/</guid>
+      <description>&lt;p&gt;&lt;img align=&#34;right&#34; width=&#34;200&#34; height=&#34;37&#34; src=&#34;./images/Gematik_Logo_Flag.png&#34;/&gt; &lt;br/&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;spezifikation-vsdm-20-fhir-profile-und-api&#34;&gt;Spezifikation VSDM 2.0 FHIR-Profile und API&lt;/h1&gt;&#xA;&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;&#xA;&lt;p&gt;Dieses Dokument beschreibt die für die Implementierung des Versicherungsstammdatenmanagements (VSDM) 2.0 erforderlichen Vorgaben. Weitere Vorgaben zur Implementierung der Anteile von PoPP und Zero Trust sind zum Stand der Veröffentlichung von VSDM 2.0 nicht Bestandteil dieses Dokuments. Die Aufnahme der Implementierungsvorgaben aus PoPP und Zero Trust in den ILF für VSDM 2.0 erfolgt iterativ sobald die notwendigen Informationen aus diesen Implementierungsleitfäden vorliegen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ZETA</title>
+      <link>http://localhost:1313/hugo-api-poc/headless/zeta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-api-poc/headless/zeta/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;TOC&#xA;{:toc}&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;zeta-dokumentation&#34;&gt;ZETA Dokumentation&lt;/h2&gt;&#xA;&lt;p&gt;{::nomarkdown}&#xA;{% include badge.html name=&amp;ldquo;release_notes&amp;rdquo; %}&#xA;{:/nomarkdown}&lt;/p&gt;&#xA;&lt;p&gt;Diese Dokumentation beschreibt die Zero Trust Access (ZETA) Lösung der gematik GmbH. Sie richtet sich an Entwickler, Integratoren und Administratoren, die ZETA in ihre Systeme integrieren oder verwalten möchten.&lt;/p&gt;&#xA;&lt;p&gt;ZETA ist eine Zero Trust Access Lösung, die eine sichere und flexible Zugriffskontrolle für Cloud-native Anwendungen bietet. Sie basiert auf den Prinzipien des Zero Trust Modells und ermöglicht es, Identitäten, Ressourcen und Richtlinien dynamisch zu verwalten. ZETA besteht aus mehreren Komponenten, die zusammenarbeiten, um eine umfassende Sicherheitsarchitektur zu schaffen.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
