@@ -28,20 +28,20 @@
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/docs/vsdm2/vsdm_statuscodes/</loc>
   </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/api/v1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/zeta-guard/</loc>
+  </url><url>
     <loc>http://localhost:1313/hugo-api-poc/docs/zeta/branch-modell/</loc>
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-api-poc/</loc>
-  </url><url>
     <loc>http://localhost:1313/hugo-api-poc/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/hugo-api-poc/</loc>
   </url><url>
     <loc>http://localhost:1313/hugo-api-poc/docs/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/api/v1/</loc>
-  </url><url>
     <loc>http://localhost:1313/hugo-api-poc/docs/zeta/api/zeta-api-versionen/</loc>
-  </url><url>
-    <loc>http://localhost:1313/hugo-api-poc/docs/zeta/zeta-guard/</loc>
   </url>
 </urlset>

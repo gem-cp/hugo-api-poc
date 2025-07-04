@@ -33,3 +33,10 @@ go.work.sum
 
 # node js
 /node_modules
+
+# hugo
+/public/
+/resources/_gen/
+resources/_gen/assets/
+# hugo cache
+/.hugo_cache/
