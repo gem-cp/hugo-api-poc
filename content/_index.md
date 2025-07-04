@@ -1,9 +1,8 @@
 ---
-type: "landing"
-title: "API PoC and Integrated Docs"
-linkTitle: "Home"
+# content/_index.md
+
+title: "Startseite" # Dieser Titel wird nicht wirklich angezeigt
+# Wir geben hier das Weiterleitungsziel und das zu verwendende Layout an
+redirectTo: "/docs/"
+layout: "redirect"
 ---
-
-[VSDM2](docs/vsdm2/)
-
-[ZETA](docs/zeta/)

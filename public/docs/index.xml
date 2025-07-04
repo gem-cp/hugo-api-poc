@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dokumentation on API PoC and Integrated Docs</title>
+    <title>TI 2.0 API Dokumentation on API PoC and Integrated Docs</title>
     <link>http://localhost:1313/hugo-api-poc/docs/</link>
-    <description>Recent content in Dokumentation on API PoC and Integrated Docs</description>
+    <description>Recent content in TI 2.0 API Dokumentation on API PoC and Integrated Docs</description>
     <generator>Hugo</generator>
     <language>de-de</language>
     <atom:link href="http://localhost:1313/hugo-api-poc/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Repository-übergreifende API Dokumentation</title>
-      <link>http://localhost:1313/hugo-api-poc/docs/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/docs/overview/</guid>
-      <description>&lt;h1 id=&#34;übersicht-der-api-dokumentation&#34;&gt;Übersicht der API Dokumentation&lt;/h1&gt;&#xA;&lt;p&gt;Diese Dokumentation fasst die API-Spezifikationen aus den folgenden Repositories zusammen:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;VSDM2:&lt;/strong&gt; Die Dokumentation für VSDM2 (&lt;a href=&#34;http://localhost:1313/hugo-api-poc/docs/vsdm2/&#34;&gt;Details hier&lt;/a&gt;) beschreibt die Schnittstellen und Prozesse im Kontext des Versichertenstammdatenmanagements. Module sind aus dem Repository &lt;code&gt;github.com/gematik/spec-vsdm2&lt;/code&gt; importiert.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;ZETA:&lt;/strong&gt; Die Dokumentation für ZETA (&lt;a href=&#34;http://localhost:1313/hugo-api-poc/docs/zeta/&#34;&gt;Details hier&lt;/a&gt;) erläutert die Zero Trust Architecture und zugehörige APIs der gematik. Module sind aus dem Repository &lt;code&gt;github.com/gematik/zeta&lt;/code&gt; importiert.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Weitere Details und spezifische Anleitungen finden Sie in den jeweiligen Sektionen dieser Dokumentationssammlung.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

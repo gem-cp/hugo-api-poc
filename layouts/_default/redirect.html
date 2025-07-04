@@ -1,0 +1,13 @@
+<!-- layouts/_default/redirect.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .Site.Title }}</title>
+    <!-- Die canonical URL sollte absolut sein, absURL kümmert sich darum -->
+    <link rel="canonical" href="{{ .Params.redirectTo | absURL }}"/>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- Der Redirect sollte relativ zur baseURL sein, relURL kümmert sich darum -->
+    <meta http-equiv="refresh" content="0; url={{ .Params.redirectTo | relURL }}" />
+  </head>
+</html>
