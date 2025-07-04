@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VSDM2 Dokumentation on API PoC and Integrated Docs</title>
+    <title>API PoC and Integrated Docs</title>
     <link>http://localhost:1313/hugo-api-poc/vsdm2/</link>
-    <description>Recent content in VSDM2 Dokumentation on API PoC and Integrated Docs</description>
+    <description>Recent content on API PoC and Integrated Docs</description>
     <generator>Hugo</generator>
     <language>de-de</language>
     <atom:link href="http://localhost:1313/hugo-api-poc/vsdm2/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Anwendungsfälle</title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</guid>
-      <description></description>
-    </item>
     <item>
       <title></title>
       <link>http://localhost:1313/hugo-api-poc/vsdm2/temp/</link>
@@ -27,6 +20,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_ablauf_ps/</guid>
       <description>&lt;h1 id=&#34;abläufe-im-ps&#34;&gt;Abläufe im PS&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Aufnahme des Versicherten&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Im Primärsystem dient bei der Anmeldung die eGK und zukünftig die GesundheitsID des Versicherten zur Aufnahme bzw. Identifikation des Versicherten.&lt;/p&gt;&#xA;&lt;p&gt;Dies beinhaltet&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;die Herstellung des Versorgungskontextes&lt;/li&gt;&#xA;&lt;li&gt;den Abruf der VSD beim Fachdienst VSDM 2.0&lt;/li&gt;&#xA;&lt;li&gt;den Abruf der Prüfziffer für die Abrechnung&lt;/li&gt;&#xA;&lt;li&gt;bei unbekannten Versicherten das Anlegen des Patientenstammblatts&lt;/li&gt;&#xA;&lt;li&gt;bei bekannten Versicherten ggf. das Aktualisieren des Patientenstammblatts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Beim ersten Kontakt des Versicherten im laufenden Quartal muss das PS den Abruf der VSD beim Fachdienst VSDM durchführen. Bei Folgebesuchen des Versicherten im laufenden Quartal kann immer ein erneuter Abruf der VSD erfolgen, um Änderungen in den VSD in das PS übernehmen zu können. Dies kann insbesondere wichtig sein in Bezug auf Anpassungen zum Versicherungsschutz oder zur Kostenabdeckung.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</guid>
+      <description>&lt;h1 id=&#34;vsd-vom-fachdienst-abrufen&#34;&gt;VSD vom Fachdienst abrufen&lt;/h1&gt;&#xA;&lt;p&gt;Der Anwendungsfall ermöglicht dem Leistungserbringer,&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;das gültige Versicherungsverhältnis beim erstmaligen Quartalsbesuch zu prüfen,&lt;/li&gt;&#xA;&lt;li&gt;die jeweils zum Besuch aktuellen VSD und&lt;/li&gt;&#xA;&lt;li&gt;die Prüfziffer für die Abrechnung zu erhalten&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Vorraussetzungen für die Durchführung des VSDM-Anwendungsfalls ist die Herstellung des Versorgungskontextes. Versorgungskontext bedeutet, dass ein Zusammenhang zwischen einem berechtigten Versicherten und einer behandelnden oder versorgenden Leistungserbringerinstitution (LEI) hergestellt wird.&lt;/p&gt;&#xA;&lt;p&gt;Der Versorgungskontext wird durch die folgenden Schritte realisiert:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Authentisierung der LEI am PoPP-Service mittels einer SM-B Identität (Karte oder HSM)&lt;/li&gt;&#xA;&lt;li&gt;Authentisierung des Versicherten mittels eGK oder GesundheitsID&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Nach der erfolgreichen Authentisierung der LEI und des Versicherten wird das Vorhandensein des Versorgungskontextes in Form eines PoPP-Tokens, welcher an das PS übergeben wird, attestiert. Anschließend kann das Primärsystems den PoPP-Token als Autorisierung verwenden, um den Abruf der Versichertenstammdaten am Fachdienst VSDM 2.0 durchzuführen. Die Herstellung des Versorgungskontextes ist nur beim ersten Besuch des Versicherten im laufenden Quartal notwendig. Bei Folgebesuchen kann der im PS bereits vorhandene PoPP-Token für jeden weiteren Abruf der VSD im laufenden Quartal verwendet werden.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

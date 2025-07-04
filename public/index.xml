@@ -8,109 +8,11 @@
     <language>de-de</language>
     <atom:link href="http://localhost:1313/hugo-api-poc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Anwendungsfälle</title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsfaelle/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ZETA API v1</title>
-      <link>http://localhost:1313/hugo-api-poc/zeta/api/v1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/zeta/api/v1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ZETA Guard</title>
-      <link>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/zeta/zeta-guard/</guid>
-      <description></description>
-    </item>
-    <item>
       <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/temp/</link>
+      <link>http://localhost:1313/hugo-api-poc/docs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/temp/</guid>
-      <description>&lt;p&gt;&lt;img align=&#34;right&#34; width=&#34;200&#34; height=&#34;37&#34; src=&#34;./images/Gematik_Logo_Flag.png&#34;/&gt; &lt;br/&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;specification-vsdm-2-fhir-profiles-and-api&#34;&gt;Specification VSDM 2 FHIR-Profiles and API&lt;/h1&gt;&#xA;&lt;p&gt;This repo holds FHIR-Profiles, sample Resources and OpenAPI specification for the VSDM 2 interface.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#specification-vsdm-2-fhir-profiles-and-api&#34;&gt;Specification VSDM 2 FHIR-Profiles and API&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#what-is-vsdm-2&#34;&gt;What is VSDM 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#fhir-profiles-vsdm-2&#34;&gt;FHIR Profiles VSDM 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#api-documentation-vsdm-2&#34;&gt;API Documentation VSDM 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#contact&#34;&gt;Contact&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-vsdm-2&#34;&gt;What is VSDM 2&lt;/h2&gt;&#xA;&lt;p&gt;The Versichertenstammdatenmanagement VSDM was introduced around 2017 and both provides patient democraphic data to healthcare professionals and proof of treatement to be used in quarterly statements to the KV. All these use cases make use of Konnektor, eHealth Card Terminals, eGK, SMC-B, Intermediär and finaly the insurant provider&amp;rsquo;s VSDM backend services.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_ablauf_ps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_ablauf_ps/</guid>
-      <description>&lt;h1 id=&#34;abläufe-im-ps&#34;&gt;Abläufe im PS&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Aufnahme des Versicherten&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Im Primärsystem dient bei der Anmeldung die eGK und zukünftig die GesundheitsID des Versicherten zur Aufnahme bzw. Identifikation des Versicherten.&lt;/p&gt;&#xA;&lt;p&gt;Dies beinhaltet&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;die Herstellung des Versorgungskontextes&lt;/li&gt;&#xA;&lt;li&gt;den Abruf der VSD beim Fachdienst VSDM 2.0&lt;/li&gt;&#xA;&lt;li&gt;den Abruf der Prüfziffer für die Abrechnung&lt;/li&gt;&#xA;&lt;li&gt;bei unbekannten Versicherten das Anlegen des Patientenstammblatts&lt;/li&gt;&#xA;&lt;li&gt;bei bekannten Versicherten ggf. das Aktualisieren des Patientenstammblatts&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Beim ersten Kontakt des Versicherten im laufenden Quartal muss das PS den Abruf der VSD beim Fachdienst VSDM durchführen. Bei Folgebesuchen des Versicherten im laufenden Quartal kann immer ein erneuter Abruf der VSD erfolgen, um Änderungen in den VSD in das PS übernehmen zu können. Dies kann insbesondere wichtig sein in Bezug auf Anpassungen zum Versicherungsschutz oder zur Kostenabdeckung.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsszenarien/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_anwendungsszenarien/</guid>
-      <description>&lt;h1 id=&#34;anwendungsszeanarien-aus-sicht-der-sektoren&#34;&gt;Anwendungsszeanarien aus Sicht der Sektoren&lt;/h1&gt;&#xA;&lt;h2 id=&#34;niedergelassener-sektor&#34;&gt;Niedergelassener Sektor&lt;/h2&gt;&#xA;&lt;p&gt;Die Aufnahme eines Patienten in einer Arzt-/ Zahnarztpraxis oder in psychotherapeutischen Praxen folgt typischerweise einem standardisierten Prozess, der je nach Art der Praxis und organisatorischen Abläufen leicht variieren kann. Um eine Behandlung durchführen und abrechnen zu können ist in jedem Fall die Herstellung des Versorgungskontextes sowie der sich daran anschließende Abruf der Versichertenstammdaten (VSD) notwendig.&#xA;Für jeden Versicherten wird ein Patientenstammblatt angelegt (der Begriff kann variieren und ist nicht mit der elektonischen Patientenakte zu verwechseln) die alle relevanten medizinischen und administrativen Daten enthält. Das Patientenstammblatt ist integrativer Teil des Primärsystems und dient sowohl der Dokumentation als auch der Nachverfolgbarkeit des Behandlungsverlaufs und ist für eine korrekte Diagnose, Therapie und Nachsorge unerlässlich.&#xA;Für Versicherte die der Praxis noch nicht bekannt sind wird ein Patientenstammblatt im Zusammenhang mit dem Abruf der VSD angelegt.&#xA;Existiert zum Versicherten bereits ein Patientenstammblatt wird diese im Laufe der Behandlung fortgeschrieben und aktualsiert.&#xA;Der Abruf der VSD muss immer beim ersten Besuch des Versicherten im laufenden Quartal durchgeführt werden. Auch bei Folgebesuchen im entsprechenden Quartal kann der Leistungserbringer (LE) einen Abruf der VSD durchführen, um auch unterquartalige Änderungen in den VSD im PS zu dokumentieren.&#xA;Das PS muss zudem auch die bei jedem Abruf mitgelieferte Prüfziffer für Abrechnungsunterlagen speichern.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_errorcodes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_errorcodes/</guid>
-      <description>&lt;h1 id=&#34;fehlerbehandlung&#34;&gt;Fehlerbehandlung&lt;/h1&gt;&#xA;&lt;p&gt;Im Arbeitsablauf des Nutzers können Fehler beim Abruf der VSD vom Fachdienst VSDM 2.0 auftreten. Da vom Nutzer kein technisches Vorwissen erwartet werden darf sind Fehlermeldungen so anzugeben, dass dieser nach Möglichkeit darauf reagieren kann. Hierbei sollen Fehlermeldungen so aufbereitet werden, dass der Nutzer versteht welches System im Prozess den Fehler verursacht hat. Außerdem sollen bei technischen Fehlern diese sprachlich aufbereitet werden, so dass der Nutzer den Inhalt des Fehlers verstehen kann.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_fhir_infos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_fhir_infos/</guid>
-      <description>&lt;h1 id=&#34;fhir-in-vsdm-20&#34;&gt;FHIR in VSDM 2.0&lt;/h1&gt;&#xA;&lt;p&gt;FHIR-Profile im VSDM 2.0 Kontext&#xA;Folgende FHIR-Profile sind im VSDM 2.0 -Kontext relevant und werden von den verschiedenen Beteiligten definiert:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Beteiligter&lt;/th&gt;&#xA;          &lt;th&gt;FHIR-Projekt&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;KBV&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;KBV&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;DAV&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;DAV&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;GKV&lt;/td&gt;&#xA;          &lt;td&gt;&amp;hellip;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;gematik&lt;/td&gt;&#xA;          &lt;td&gt;&amp;hellip;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;fhir-releases&#34;&gt;FHIR Releases&lt;/h2&gt;&#xA;&lt;h2 id=&#34;testportal&#34;&gt;Testportal??&lt;/h2&gt;&#xA;&lt;h2 id=&#34;referenzierung-von-fhir-objekten-un-bundles&#34;&gt;Referenzierung von FHIR-Objekten un Bundles&lt;/h2&gt;&#xA;&lt;h2 id=&#34;tools-und-hinweise-zu-fhir&#34;&gt;Tools und Hinweise zu FHIR&lt;/h2&gt;&#xA;&lt;h2 id=&#34;vsdm-fhir-beispiele&#34;&gt;VSDM FHIR-Beispiele&lt;/h2&gt;&#xA;&lt;h2 id=&#34;konvertierung-von-fhir-xml-und-json&#34;&gt;Konvertierung von FHIR XML und JSON&lt;/h2&gt;&#xA;&lt;h2 id=&#34;rwferenzen-in-bundles-und-parameters-objekten&#34;&gt;Rwferenzen in Bundles und Parameters Objekten&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_informationsmodell/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_informationsmodell/</guid>
-      <description>&lt;h1 id=&#34;1-hinweise-zum-informationsmodell-vsdm-20&#34;&gt;1 Hinweise zum Informationsmodell VSDM 2.0&lt;/h1&gt;&#xA;&lt;p&gt;Mit der Einführung von VSDM 2.0 wird FHIR (Fast Healthcare Interoperability Resources) zur Datenübertragung verwendet.&#xA;Ziel der FHIR-Implementierung für VSDM 2.0 ist eine konsistente Datenhaltung und einen effizienten Austausch von Versichertenstammdaten zwischen dem Fachdienst VSDM 2.0 und den Primärsystemen zu gewährleisten. FHIR bietet hierfür eine Grundlage, die sich flexibel an spezifische Anforderungen anpassen lässt.&lt;/p&gt;&#xA;&lt;h3 id=&#34;logical-model&#34;&gt;Logical Model&lt;/h3&gt;&#xA;&lt;p&gt;Das Logical Model beschreibt die Struktur der Versichertenstammdaten aus fachlicher Sicht. Es dient als Grundlage für die Ableitung von FHIR-Profilen und unterstützt die Kommunikation zwischen Fachdomäne und technischer Umsetzung.&#xA;Jedes Element des Datensatzen wird wiefolgt beschrieben:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_kontext_popp_zt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_kontext_popp_zt/</guid>
-      <description>&lt;h1 id=&#34;vsdm-20-im-kontext-popp-und-zerotrust&#34;&gt;VSDM 2.0 im Kontext PoPP und ZeroTrust&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Überblick Zusammenspiel der Anwendungen&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/hugo-api-poc/images/System%C3%BCberblick_V_P_Z.png&#34; alt=&#34;Alt-Text&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;VSDM 2.0 setzt voraus, dass der Versorgungskontext für einen zu behandelnden Versicherten in Form eines PoPP-Tokens vom Primärsystem via PoPP-Client und PoPP-Service bezogen wurde, um den Anwendungsfall zum Abruf der VSD durchführen zu können.&lt;/p&gt;&#xA;&lt;p&gt;Proof of Patient Presence (PoPP) ist ein Nachweis, der belegt, dass sich ein Versicherter zu einem bestimmten Zeitpunkt in einem Versorgungskontext mit einer bestimmten Leistungserbringerinstitution (LEI) befindet. Im kryptografisch gesicherten PoPP-Token sind somit Informationen über die LEI und über den Versicherten zusammengeführt. Dabei ist es die Aufgabe der PoPP-Lösung, die Authentifizierung der LEI durchzuführen und durch Authentifizierung des Versicherten per GesundheitsID oder Authentifizierung der elektronischen Gesundheitskarte (eGK) eines Versicherten, an einem eHealth-Kartenterminal oder handelsüblichen USB Smartcard-Reader, den Versorgungskontext zu bestätigen. Das Ergebnis ist das PoPP-Token, welches der LEI zur Autorisierung für den Zugriff auf die Daten des Versicherten in Diensten der Telematikinfrastruktur (TI) dient.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_pruefziffer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_pruefziffer/</guid>
-      <description>&lt;h1 id=&#34;hinweise-zur-prüfziffer&#34;&gt;Hinweise zur Prüfziffer&lt;/h1&gt;&#xA;&lt;p&gt;Im Gegensatz zu VSDM 1.0 wird mit VSDM 2.0 vom Fachdienst kein Prüfungsnachweis mehr sondern die Prüfziffer an das Primärsystem übergeben.&lt;/p&gt;&#xA;&lt;p&gt;Bei einer erfolgreichen Durchführung einer VSD-Anfrage wird&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;bei erstmaligem Abruf im laufenden Quartal und&lt;/li&gt;&#xA;&lt;li&gt;bei jedem weiteren Abruf der VSD im laufenden Quartal&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;die Prüfziffer unabhängig davon, ob sich Änderungen in den VSD ergeben haben an das Primärsystem übermittelt.&lt;/p&gt;&#xA;&lt;p&gt;Das Primärsystem muss die Prüfziffer zur Erstellung der Abrechnungsunterlagen speichern.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_psinteraktionen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_psinteraktionen/</guid>
-      <description>&lt;h2 id=&#34;interaktionen-des-primärsystems&#34;&gt;Interaktionen des Primärsystems&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Diese Seite enthält Hinweise und Empfehlungen zur Interaktion des Primärsystems mit dem Nutzer im VSDM 2.0 - Kontext&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Durch die in den Arztpraxen, Krankenhäusern oder Apotheken eingesetzten Clientsysteme soll vor allem die Interoperabilität, Benutzerfreundlichkeit und Sicherheit sichergestellt werden.&#xA;Das Primärsystem sollte einfach und intuitiv zu bedienen sein, so dass Nutzer (Ärzte, Praxispersonal) in ihren täglichen Arbeitsabläufen unterstützt werden.&#xA;Nachfolgend werden Interaktionen des PS mit dem Nutzer aufgeführt, die helfen können den Prozess möglichst nutzerfreundlich zu gestalten. Ein Anspruch auf Vollständigkeit bei der Abdeckung der Aufnahmeprozesse besteht nicht und die hier beschriebenen Inhalte sind als Interpretationshilfe zu verstehen. Der Lösungsraum geht darüber hinaus.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_statuscodes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/vsdm2/vsdm_statuscodes/</guid>
-      <description>&lt;h1 id=&#34;vsdm-20-api-dokumentation-fehlerbehandlung-am-vsdm-20-fachdienst&#34;&gt;VSDM 2.0 API-Dokumentation Fehlerbehandlung am VSDM 2.0 Fachdienst&lt;/h1&gt;&#xA;&lt;p&gt;Der Fachdienst VSDM 2.0 stellt eine http-Schnittstelle für den Aufruf durch das Clientsystem bereit. Das Ergebnis der Operation wird in der Verwendung von Http-Status-Codes gemäß [RFC2616] mitgeteilt.&#xA;Folgende http Status Codes können Clients bei der Benutzung der Schnittstellen des VSDM-Fachdienstes erwarten.&#xA;Fehler können sowohl im inneren http-Requests (bei fachlichen Fehlern) als auch im äußeren http-Request auftreten.&lt;/p&gt;&#xA;&lt;h2 id=&#34;status-codes&#34;&gt;Status Codes&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;http Operation&lt;/th&gt;&#xA;          &lt;th&gt;Mögliche http Statuscodes&lt;/th&gt;&#xA;          &lt;th&gt;Bedeutung/Fehlerdetails&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Resource-Server GET /vsdservice/v1/vsdmbundle&lt;/td&gt;&#xA;          &lt;td&gt;200&lt;/td&gt;&#xA;          &lt;td&gt;Anfrage konnte erfolgreich bearbeitet werden. Versichertenstammdaten (VSDMBundle) und Prüfziffer sind in der Antwort enthalten.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;304&lt;/td&gt;&#xA;          &lt;td&gt;Anfrage konnte erfolgreich bearbeitet werden. Das Clientsystem besitzt schon die aktuellsten Versichertenstammdaten und es erfolgt keine Aktualisierung. Der Prüfziffer ist in der Antwort enthalten.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;400&lt;/td&gt;&#xA;          &lt;td&gt;79010, 79011, 79030, 79031, 79032, 79205, 79206, 79207, 79400, 79401, 79402&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;403&lt;/td&gt;&#xA;          &lt;td&gt;79041&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;404&lt;/td&gt;&#xA;          &lt;td&gt;79020&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;405&lt;/td&gt;&#xA;          &lt;td&gt;79040&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;428&lt;/td&gt;&#xA;          &lt;td&gt;79033&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;500&lt;/td&gt;&#xA;          &lt;td&gt;79100&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;502&lt;/td&gt;&#xA;          &lt;td&gt;79110&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;504&lt;/td&gt;&#xA;          &lt;td&gt;79111&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
-    </item>
-    <item>
-      <title>Branch Modell</title>
-      <link>http://localhost:1313/hugo-api-poc/zeta/branch-modell/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/zeta/branch-modell/</guid>
-      <description>&lt;p&gt;Im &lt;a href=&#34;https://github.com/gematik/zeta&#34;&gt;ZETA GitHub Repository&lt;/a&gt; werden Branches verwendet um den Status der Weiterentwicklung und das Review von Änderungen abzubilden.&lt;/p&gt;&#xA;&lt;p&gt;Folgende Branches werden verwendet:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;main&lt;/em&gt; (enthält den letzten freigegebenen Stand der Entwicklung; besteht permanent)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;develop&lt;/em&gt; (enthält den Stand der fertig entwickelten Features und wird zum Review durch Industriepartner und Gesellschafter verwendet; basiert auf main; nach Freigabe erfolgt ein merge in main und ein Release wird erzeugt; besteht permanent)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;feature/name&lt;/em&gt; (in feature branches werden neue Features entwickelt; basiert auf develop; nach Fertigstellung erfolgt ein merge in develop; wird nach dem merge gelöscht)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;hotfix/name&lt;/em&gt; (in hotfix branches werden Hotfixes entwickelt; basiert auf main; nach Fertigstellung erfolgt ein merge in develop und in main; wird nach dem merge gelöscht)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;concept/name&lt;/em&gt; (in concept branches werden neue Konzepte entwickelt; basiert auf develop; dient der Abstimmung mit Dritten; es erfolgt kein merge; wird nach Bedarf gelöscht)&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;misc/name&lt;/em&gt; (nur für internen Gebrauch der gematik; es erfolgt kein merge; wird nach Bedarf gelöscht)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>ZETA API Versionen</title>
-      <link>http://localhost:1313/hugo-api-poc/zeta/api/zeta-api-versionen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-api-poc/zeta/api/zeta-api-versionen/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gematik.github.io/ZETA/docs/api/v1/&#34;&gt;ZETA API v1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>http://localhost:1313/hugo-api-poc/docs/</guid>
+      <description>&lt;h1 id=&#34;home&#34;&gt;Home&lt;/h1&gt;&#xA;&lt;p&gt;Hier geht es um ZETA und VSDM.&lt;/p&gt;&#xA;&lt;h2 id=&#34;zeta&#34;&gt;ZETA&lt;/h2&gt;&#xA;&lt;p&gt;Hier geht es um ZETA.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vsdm2&#34;&gt;VSDM2&lt;/h2&gt;&#xA;&lt;p&gt;Hier geht es um VSDM2.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

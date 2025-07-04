@@ -22,26 +22,26 @@ title = "API PoC and Integrated Docs"
     path = "github.com/gematik/spec-vsdm2"
     [[module.imports.mounts]]
       source = "docs"
-      target = "content/vsdm2"
+      target = "content/docs/vsdm2"
     [[module.imports.mounts]]
       source = "images"
-      target = "static/vsdm2/images"
+      target = "static/docs/vsdm2/images"
     [[module.imports.mounts]]
       source = "README.md"
-      target = "content/vsdm2/_index.md"
+      target = "content/docs/vsdm2/_index.md"
 
   # Import von zeta
   [[module.imports]]
     path = "github.com/gematik/zeta"
     [[module.imports.mounts]]
       source = "docs"
-      target = "content/zeta"
+      target = "content/docs/zeta"
     [[module.imports.mounts]]
       source = "images"
-      target = "static/zeta/images"
+      target = "static/docs/zeta/images"
     [[module.imports.mounts]]
       source = "index.md"
-      target = "content/zeta/_index.md"
+      target = "content/docs/zeta/_index.md"
 
 # Markdown Konfiguration für Syntax-Highlighting etc.
 [markup]

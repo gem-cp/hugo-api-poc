@@ -18,21 +18,29 @@
 <link rel="icon" type="image/png" href="/hugo-api-poc/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/hugo-api-poc/favicons/android-192x192.png" sizes="192x192">
 
-<title>ZETA Dokumentation | API PoC and Integrated Docs</title>
-<meta name="description" content="Dies ist die Übersicht der importierten ZETA-Dokumentation. Die Inhalte stammen aus dem zeta Repository.">
+<title>ZETA | API PoC and Integrated Docs</title>
+<meta name="description" content="TOC {:toc} ZETA Dokumentation {::nomarkdown} {% include badge.html name=“release_notes” %} {:/nomarkdown}
+Diese Dokumentation beschreibt die Zero Trust Access (ZETA) Lösung der gematik GmbH. Sie richtet sich an Entwickler, Integratoren und Administratoren, die ZETA in ihre Systeme integrieren oder verwalten möchten.
+ZETA ist eine Zero Trust Access Lösung, die eine sichere und flexible Zugriffskontrolle für Cloud-native Anwendungen bietet. Sie basiert auf den Prinzipien des Zero Trust Modells und ermöglicht es, Identitäten, Ressourcen und Richtlinien dynamisch zu verwalten. ZETA besteht aus mehreren Komponenten, die zusammenarbeiten, um eine umfassende Sicherheitsarchitektur zu schaffen.">
 <meta property="og:url" content="http://localhost:1313/hugo-api-poc/zeta/">
   <meta property="og:site_name" content="API PoC and Integrated Docs">
-  <meta property="og:title" content="ZETA Dokumentation">
-  <meta property="og:description" content="Dies ist die Übersicht der importierten ZETA-Dokumentation. Die Inhalte stammen aus dem zeta Repository.">
+  <meta property="og:title" content="ZETA">
+  <meta property="og:description" content="TOC {:toc} ZETA Dokumentation {::nomarkdown} {% include badge.html name=“release_notes” %} {:/nomarkdown}
+Diese Dokumentation beschreibt die Zero Trust Access (ZETA) Lösung der gematik GmbH. Sie richtet sich an Entwickler, Integratoren und Administratoren, die ZETA in ihre Systeme integrieren oder verwalten möchten.
+ZETA ist eine Zero Trust Access Lösung, die eine sichere und flexible Zugriffskontrolle für Cloud-native Anwendungen bietet. Sie basiert auf den Prinzipien des Zero Trust Modells und ermöglicht es, Identitäten, Ressourcen und Richtlinien dynamisch zu verwalten. ZETA besteht aus mehreren Komponenten, die zusammenarbeiten, um eine umfassende Sicherheitsarchitektur zu schaffen.">
   <meta property="og:locale" content="de_de">
   <meta property="og:type" content="website">
 
-  <meta itemprop="name" content="ZETA Dokumentation">
-  <meta itemprop="description" content="Dies ist die Übersicht der importierten ZETA-Dokumentation. Die Inhalte stammen aus dem zeta Repository.">
-  <meta itemprop="wordCount" content="14">
+  <meta itemprop="name" content="ZETA">
+  <meta itemprop="description" content="TOC {:toc} ZETA Dokumentation {::nomarkdown} {% include badge.html name=“release_notes” %} {:/nomarkdown}
+Diese Dokumentation beschreibt die Zero Trust Access (ZETA) Lösung der gematik GmbH. Sie richtet sich an Entwickler, Integratoren und Administratoren, die ZETA in ihre Systeme integrieren oder verwalten möchten.
+ZETA ist eine Zero Trust Access Lösung, die eine sichere und flexible Zugriffskontrolle für Cloud-native Anwendungen bietet. Sie basiert auf den Prinzipien des Zero Trust Modells und ermöglicht es, Identitäten, Ressourcen und Richtlinien dynamisch zu verwalten. ZETA besteht aus mehreren Komponenten, die zusammenarbeiten, um eine umfassende Sicherheitsarchitektur zu schaffen.">
+  <meta itemprop="wordCount" content="154">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ZETA Dokumentation">
-  <meta name="twitter:description" content="Dies ist die Übersicht der importierten ZETA-Dokumentation. Die Inhalte stammen aus dem zeta Repository.">
+  <meta name="twitter:title" content="ZETA">
+  <meta name="twitter:description" content="TOC {:toc} ZETA Dokumentation {::nomarkdown} {% include badge.html name=“release_notes” %} {:/nomarkdown}
+Diese Dokumentation beschreibt die Zero Trust Access (ZETA) Lösung der gematik GmbH. Sie richtet sich an Entwickler, Integratoren und Administratoren, die ZETA in ihre Systeme integrieren oder verwalten möchten.
+ZETA ist eine Zero Trust Access Lösung, die eine sichere und flexible Zugriffskontrolle für Cloud-native Anwendungen bietet. Sie basiert auf den Prinzipien des Zero Trust Modells und ermöglicht es, Identitäten, Ressourcen und Richtlinien dynamisch zu verwalten. ZETA besteht aus mehreren Komponenten, die zusammenarbeiten, um eine umfassende Sicherheitsarchitektur zu schaffen.">
 <link href="/hugo-api-poc/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -66,7 +74,21 @@
     </header>
     <div class="container-fluid td-default td-outer">
       <main role="main" class="td-main">
-        <p>Dies ist die Übersicht der importierten ZETA-Dokumentation. Die Inhalte stammen aus dem <a href="https://github.com/gematik/zeta">zeta Repository</a>.</p>
+        <ul>
+<li>TOC
+{:toc}</li>
+</ul>
+<h2 id="zeta-dokumentation">ZETA Dokumentation</h2>
+<p>{::nomarkdown}
+{% include badge.html name=&ldquo;release_notes&rdquo; %}
+{:/nomarkdown}</p>
+<p>Diese Dokumentation beschreibt die Zero Trust Access (ZETA) Lösung der gematik GmbH. Sie richtet sich an Entwickler, Integratoren und Administratoren, die ZETA in ihre Systeme integrieren oder verwalten möchten.</p>
+<p>ZETA ist eine Zero Trust Access Lösung, die eine sichere und flexible Zugriffskontrolle für Cloud-native Anwendungen bietet. Sie basiert auf den Prinzipien des Zero Trust Modells und ermöglicht es, Identitäten, Ressourcen und Richtlinien dynamisch zu verwalten. ZETA besteht aus mehreren Komponenten, die zusammenarbeiten, um eine umfassende Sicherheitsarchitektur zu schaffen.</p>
+<h2 id="zeta-api">ZETA API</h2>
+<p>Die ZETA API beschreibt aus ZETA Client Sicht, wie man auf ZETA Guard geschützte Resource Server zugreifen kann.</p>
+<p><a href="/docs/api/v1/index.md">ZETA API Dokumentation</a></p>
+<h2 id="zeta-guard">ZETA Guard</h2>
+<p>Der ZETA Guard ist die zentrale Komponente von ZETA, die die Zugriffskontrolle auf Anwendungsebene durchsetzt. Er fungiert als Policy Enforcement Point (PEP) und Policy Decision Point (PDP) und ist verantwortlich für die Durchsetzung von Sicherheitsrichtlinien und die Entscheidung über Zugriffsanfragen.</p>
 
       </main>
       <footer class="td-footer row d-print-none">
